@@ -19,7 +19,9 @@ const templateTypes = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'EJS', description : "easy!" , method: "k!", templates: templateTypes});
+  res.render('home', { title: 'Handlebars', //description : "easy!" , method: "k!", 
+  templates: templateTypes
+});
 });
 
 module.exports = router;
